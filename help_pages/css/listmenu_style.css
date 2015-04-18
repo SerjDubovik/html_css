@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+ul#topnav {
+	margin: 0; 
+	padding: 0;
+	float: left;
+	width: 970px;
+	list-style: none;
+	position: relative; /*--Установить относительное позиционирование на неупорядоченный список - не на элемент списка--*/
+	font-size: 1.2em;
+}
+ul#topnav li {
+	float: left;
+	margin: 0; padding: 0;
+	border:#D6D8FF solid 4px; /*-- рамка того же цвета что и фон, делает эффект разделения кнопок меню--*/
+}
+ul#topnav li a {
+	padding: 10px 15px;
+	display: block;
+	color: #f0f0f0;
+	text-decoration: none;
+}
+ul#topnav li:hover { 
+	background: #1376c9 repeat-x; 
+}
+/*Обратите внимание на цвет при наведении на элемент списка, а не по ссылке. Может оставаться */
+
+ul#topnav li span {
+	float: left;
+	padding: 15px 0;
+	position: absolute;
+	left: 0; top:35px;
+	display: none; /*--Показывать по умолчанию--*/
+	width: 784px;
+	background: #1376c9;
+	color: #fff;
+	/*--Внизу справа скругление угла--*/
+         border-bottom-right-radius: 5px;
+	-moz-border-bottom-right-radius: 5px;
+	-khtml-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	/*--Внизу слева скругление угла--*/
+         border-bottom-left-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+	-khtml-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+ul#topnav li:hover span { 
+	display: block; 
+} /*--Показать подменю при наведении--*/
+
+ul#topnav li span a { 
+	display: inline; 
+} /*--Возвращаем в исходное состояние--*/
+
+ul#topnav li span a:hover {
+	text-decoration: underline;
+}

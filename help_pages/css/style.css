@@ -1,0 +1,290 @@
+@charset "utf-8";
+/* CSS Document */
+* { /* reset - сброс */
+ margin: 0; /* удаляем отступы внешние*/
+ padding: 0; /* удаляем отступы внутренние*/
+ border:0 none; /* удаляем рамки*/
+ }
+ p {
+	 text-indent:30px; /* задаёт значение отступа в абзаце*/
+	 font-size:16pt; /* задаёт величину шрифта*/
+ }
+ #text_code {
+	 background:#FDFFBF;
+	 padding:15px 15px;
+	 border:#000000 solid 2px;
+	 border-radius:5px;
+	 color:#1600A4;
+	 
+ }
+ body {
+	background:#DBFFCE;
+	width:100%;
+	height:100%;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+#wrap {
+	background:#E3FFD8;
+	margin:auto;
+	position:relative;
+	width:1224px;
+	height:auto;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+#header {
+	background:#B0FF91;
+	float:right;
+	margin: 5px 5px 5px 5px;
+	position:relative;
+	width:1005px;
+	height:100px;
+	border:1px solid #000000;
+	/*border-radius:5px;*/
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+#sitebar {
+	margin: 117px 5px 5px 5px;
+	position:fixed;
+	background:#B0FF91;
+	float:left;
+	width:200px;
+	height:500px;
+	border:1px solid #000000;
+	/*border-radius:5px;*/
+}
+
+ul.sitebar_menu {
+	list-style:none; /* убирает точечки, квадратики и прочую лабуду */
+	padding: 5px 5px; /* верх/право  или верх/лево зависит от выбора стороны */
+}
+ul.sitebar_menu li {
+	float:left;
+	display:inline;
+	text-align:center;
+	width:180px;
+	height:30px;
+	padding:0px 0px;  /* отступ от ссылки до краёв рамки */
+	margin: 0px 0px; /* отступ между рамками между блоками лево/право */
+	background:#B0FF91;
+}
+
+ul.sitebar_menu li a {
+	text-decoration:none;
+	color:#000000;	/* цвет текста ссылки до наведения курсора */
+	font-weight:normal;
+	font-size:18px;	
+}
+
+ul.sitebar_menu li:hover {
+	background:#BDBDBD;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+#content {
+	margin:5px 5px 5px 5px;
+	position:relative;
+	background:#FAFFF8;
+	float:right;
+	width:1005px;
+	height:10000px;
+	border:1px solid #000000;
+	/*border-radius:5px;*/
+}
+
+#con_menu_box {
+	background:#D6D8FF;
+	position:relative;
+	top:10px;
+	left:100px;
+	border:2px solid #000000;
+	width:784px;
+	height:200px;
+}
+
+/*----------- меню в контенте. главная линия--------------*/
+ul {
+	display:block;
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+ul:after {
+	display:block;
+	content:'';
+	clear:both;
+	float:none;
+}
+ul.menu_content li {
+	float:left;
+	position:relative;
+}
+ul.menu_content li a {
+	display:block;
+	padding:10px;
+	color:#FFFFFF;
+	background-color:#FF0004;
+	text-decoration:none;
+}
+ul.menu_content li a:hover {
+	background-color:#000000;
+}
+/*------------ меню в контенте. развертываемые -------------*/
+
+/*------------ стиль для выпадающей меню 1-----------*/
+ul.sub_menu_1 { /* задаёт общие параметры для блока низпадающего меню.*/
+	display:none;
+	position:absolute;
+	width:110px;				/* ширина блока ощая */
+	top:37px;					/* сдвиг сверху от блока */
+	left:0px;					/* сдвиг слева от блока */
+	background-color:#0AFF00; 	/* цвет залвки блока общий */
+}
+ul.sub_menu_1 li {
+	display:block; /*делает меню скрытым до наведения миши*/
+}
+ul.sub_menu_1 li a {
+	display:block;
+	padding:10px;
+	color:#FFFFFF; 				/* цвет текста*/
+	width:110px; 				/* ширина кнопки меню */
+	height:25px; 				/* высота кнопочки меню */
+	background-color:#FF0004; 	/* цвет фона кнопочки */
+	text-decoration:none; 		/* подчеркивание и прочая лабуда */
+}
+ul.sub_menu_1 li a:hover {
+	text-decoration:none; 		/* подчеркивание текста при наведении мыши и прочая лабуда */
+}
+ul.menu_content li:hover ul.sub_menu_1 {
+	display:block;
+}
+/*------------ стиль для выпадающей меню 2-----------*/
+ul.sub_menu_2 {
+	display:none;
+	position:absolute;
+	width:110px;				/* ширина блока ощая */
+	top:37px;					/* сдвиг сверху от блока */
+	left:0px;					/* сдвиг слева от блока */
+	background-color:#0AFF00; 	/* цвет заливки блока общий */
+}
+ul.sub_menu_2 li {
+	display:block;
+}
+ul.sub_menu_2 li a {
+	display:block;
+	padding:10px;
+	color:#FFFFFF; 				/* цвет текста*/
+	width:110px; 				/* ширина кнопки меню */
+	height:25px; 				/* высота кнопочки меню */
+	background-color:#FF0004; 	/* цвет фона кнопочки */
+	text-decoration:none; 		/* подчеркивание и прочая лабуда */
+}
+ul.sub_menu_2 li a:hover {
+	text-decoration:none; 		/* подчеркивание текста при наведении мыши и прочая лабуда */
+}
+ul.menu_content li:hover ul.sub_menu_2 {
+	display:block;
+}
+/*------------ стиль для выпадающей меню 3-----------*/
+ul.sub_menu_3 {
+	display:none;
+	position:absolute;
+	width:90px;					/* ширина блока ощая */
+	top:37px;					/* сдвиг сверху от блока */
+	left:0px;					/* сдвиг слева от блока */
+	background-color:#0AFF00; 	/* цвет залиаки блока общий */
+}
+ul.sub_menu_3 li {
+	display:block;
+}
+ul.sub_menu_3 li a {
+	display:block;
+	padding:10px;
+	color:#FFFFFF; 				/* цвет текста*/
+	width:90px; 				/* ширина кнопки меню */
+	height:25px; 				/* высота кнопочки меню */
+	background-color:#FF0004; 	/* цвет фона кнопочки */
+	text-decoration:none; 		/* подчеркивание и прочая лабуда */
+}
+ul.sub_menu_3 li a:hover {
+	text-decoration:none; 		/* подчеркивание текста при наведении мыши и прочая лабуда */
+}
+ul.menu_content li:hover ul.sub_menu_3 {
+	display:block;
+}
+/*------------ стиль для выпадающей меню 4-----------*/
+ul.sub_menu_4 {
+	display:none;
+	position:absolute;
+	width:150px;				/* ширина блока ощая */
+	top:37px;					/* сдвиг сверху от блока */
+	left:0px;					/* сдвиг слева от блока */
+	background-color:#FF0004; 	/* цвет залиаки блока общий */
+}
+ul.sub_menu_4 li {
+	display:block;
+}
+ul.sub_menu_4 li a {
+	display:block;
+	padding:10px;
+	color:#FFFFFF; 				/* цвет текста*/
+	width:150px; 				/* ширина кнопки меню */
+	height:25px; 				/* высота кнопочки меню */
+	background-color:#FF0004; 	/* цвет фона кнопочки */
+	text-decoration:none; 		/* подчеркивание и прочая лабуда */
+}
+ul.sub_menu_4 li a:hover {
+	text-decoration:none; 		/* подчеркивание текста при наведении мыши и прочая лабуда */
+}
+ul.menu_content li:hover ul.sub_menu_4 {
+	display:block;
+}
+/*------------ стиль для выпадающей меню 5-----------*/
+ul.sub_menu_5 {
+	display:none;
+	position:absolute;
+	width:200px;				/* ширина блока ощая */
+	top:37px;					/* сдвиг сверху от блока */
+	left:0px;					/* сдвиг слева от блока */
+	background-color:#FF0004; 	/* цвет залиаки блока общий */
+}
+ul.sub_menu_5 li {
+	display:block;
+}
+ul.sub_menu_5 li a {
+	display:block;
+	padding:10px;
+	color:#FFFFFF; 				/* цвет текста*/
+	width:200px; 				/* ширина кнопки меню */
+	height:25px; 				/* высота кнопочки меню */
+	background-color:#FF0004; 	/* цвет фона кнопочки */
+	text-decoration:none; 		/* подчеркивание и прочая лабуда */
+}
+ul.sub_menu_5 li a:hover {
+	text-decoration:none; 		/* подчеркивание текста при наведении мыши и прочая лабуда */
+}
+ul.menu_content li:hover ul.sub_menu_5 {
+	display:block;
+}
+
+/* это текст после меню вместе с кодом и стилем для наглядности*/
+#text_content {
+	position:relative; 			/* определяет позицию, в данном случае настраиваемая */
+	top:20px;
+	padding:15px 15px; 			/* отступы от текста до края рамки из нутри*/
+	/*border:#000000 2px solid;
+	border-radius:5px;*/
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+#futer {
+	margin: 5px 5px 5px 5px;
+	position:relative;
+	background:#B0FF91;
+	float:right;
+	width:1005px;
+	height:30px;
+	border:1px solid #000000;
+	/*border-radius:5px;*/
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+		
+

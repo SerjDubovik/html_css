@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ниспадающее меню</title>
+
+<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+
+<div id="wrap">
+
+	<div id="header">
+    	<a href="index.html">Главная</a>
+    </div><!-- header -->
+    
+    <div id="sitebar">
+    		<ul class="sitebar_menu">
+            	<li><a href="menubar.html">ниспадающее меню</a></li>
+            	<li><a href="listmenu.html">горизонтальное меню</a></li>
+            	<li><a href="#">*</a></li>
+                <li><a href="#">*</a></li>
+            	<li><a href="#">*</a></li>
+            	<li><a href="#">*</a></li>
+                <li><a href="#">*</a></li>
+            	<li><a href="#">*</a></li>
+            	<li><a href="#">*</a></li>
+                <li><a href="#">*</a></li>
+            	<li><a href="#">*</a></li>
+            	<li><a href="#">*</a></li>
+            </ul>
+    </div><!-- sitebar -->
+    
+    <div id="content">
+    	<h1 align="center">Выпадающее одновложное меню</h1>
+    	<div id="con_menu_box">
+        	<ul class="menu_content">
+                	<li><a href="#">главная</a>
+                    	<ul class="sub_menu_1">
+                        	<li><a href="#">лента новостей</a>
+                            <li><a href="#">блог</a>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#">личный кабинет</a>
+                    	<ul class="sub_menu_2">
+                        	<li><a href="#">вход</a>
+                            <li><a href="#">создать аккаунт</a>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#">магазин</a>
+                    	<ul class="sub_menu_3">
+                        	<li><a href="#">моя корзина</a>
+                            <li><a href="#">распродажа</a>
+                            <li><a href="#">новинки</a>
+                            <li><a href="#">продукция</a>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#">контакты</a>
+                    	<ul class="sub_menu_4">
+                        	<li><a href="#">найти нас на карте</a>
+                            <li><a href="#">написать нам письмо</a>
+                            <li><a href="#">заказать звонок</a>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#">о нас</a>
+                    	<ul class="sub_menu_5">
+                        	<li><a href="#">связатся с нами</a>
+                            <li><a href="#">узнать больше об авторах</a>
+                        </ul>
+                    </li>
+                </ul> <!-- menu_content -->
+        </div><!-- menu_content -->
+        <div id="text_content">
+        	<p>Очень часто возникает задача расположить навигацию сайта в выпадающем односложном меню, не прибегая к использованию Java. Для этой
+            цели вполне достаточно средств HTML и CSS. Как это сделать и настроить под свою задачу речь пойдёт ниже.</p></br>
+            <p>Прежде всего, определимся, что мы хотим получить в итоге. Будем строить линейное меню - при наведении на его кнопки, они меняют свой цвет на
+            заданный, меняется цвет текста на заданный, и вниз "выпадает" меню, закрывая собой контент сайта. При последующем наведении курсора цвет
+            кнопки и текста подменю меняется аналогично описанному выше. При отводе курсора подменю исщезает, а кнопка основного меню становится 
+            прежней.</p></br>
+            <p>В итоге мы получим код меню HTML:</p></br>
+            </br>
+            <div id="text_code">
+            	<p style="text-indent:10px">&lt;ul class="menu_content"&gt;</p>
+                	<p style="text-indent:30px">&lt;li&gt;&lt;a href="#"&gt;главная&lt;/a&gt;</p>
+                    	<p style="text-indent:50px">&lt;ul class="sub_menu_1"&gt;</p>
+                        	<p style="text-indent:80px">&lt;li&gt;&lt;a href="#"&gt;лента новостей&lt;/a&gt;</p>
+                            <p style="text-indent:80px">&lt;li&gt;&lt;a href="#"&gt;блог&lt;/a&gt;</p>
+                        <p style="text-indent:50px">&lt;/ul&gt;</p>
+                    <p style="text-indent:30px">&lt;/li&gt;</p>
+                    </br>
+                    <p style="text-indent:30px">&lt;li&gt;&lt;a href="#"&gt;личный кабинет&lt;/a&gt;</p>
+                    	<p style="text-indent:50px">&lt;ul class="sub_menu_2"&gt;</p>
+                        	<p style="text-indent:80px">&lt;li&gt;&lt;a href="#"&gt;вход&lt;/a&gt;</p>
+                            <p style="text-indent:80px">&lt;li&gt;&lt;a href="#"&gt;создать аккаунт&lt;/a&gt;</p>
+                        <p style="text-indent:50px">&lt;/ul&gt;</p>
+                    <p style="text-indent:30px">&lt;/li&gt;</p>
+                    </br>
+                    <p style="text-indent:30px">&lt;li&gt;&lt;a href="#"&gt;магазин&lt;/a&gt;</p>
+                    	<p style="text-indent:50px">&lt;ul class="sub_menu_3"&gt;</p>
+                        	<p style="text-indent:80px">&lt;li&gt;&lt;a href="#"&gt;моя корзина&lt;/a&gt;</p>
+                            <p style="text-indent:80px">&lt;li&gt;&lt;a href="#"&gt;распродажа&lt;/a&gt;</p>
+                            <p style="text-indent:80px">&lt;li&gt;&lt;a href="#"&gt;новинки&lt;/a&gt;</p>
+                            <p style="text-indent:80px">&lt;li&gt;&lt;a href="#"&gt;продукция&lt;/a&gt;</p>
+                        <p style="text-indent:50px">&lt;/ul&gt;</p>
+                    <p style="text-indent:30px">&lt;/li&gt;</p>
+                    </br>
+                    <p style="text-indent:30px">&lt;li&gt;&lt;a href="#"&gt;контакты&lt;/a&gt;</p>
+                    	<p style="text-indent:50px">&lt;ul class="sub_menu_4"&gt;</p>
+                        	<p style="text-indent:80px">&lt;li&gt;&lt;a href="#"&gt;найти нас на карте&lt;/a&gt;</p>
+                            <p style="text-indent:80px">&lt;li&gt;&lt;a href="#"&gt;написать нам письмо&lt;/a&gt;</p>
+                            <p style="text-indent:80px">&lt;li&gt;&lt;a href="#"&gt;заказать звонок&lt;/a&gt;</p>
+                        <p style="text-indent:50px">&lt;/ul&gt;</p>
+                    <p style="text-indent:30px">&lt;/li&gt;</p>
+                    </br>
+                    <p style="text-indent:30px">&lt;li&gt;&lt;a href="#"&gt;о нас&lt;/a&gt;</p>
+                    	<p style="text-indent:50px">&lt;ul class="sub_menu_5"&gt;</p>
+                        	<p style="text-indent:30px">&lt;li&gt;&lt;a href="#"&gt;связатся с нами&lt;/a&gt;</p>
+                            <p style="text-indent:30px">&lt;li&gt;&lt;a href="#"&gt;узнать больше об авторах&lt;/a&gt;</p>
+                        <p style="text-indent:50px">&lt;/ul&gt;</p>
+                    <p style="text-indent:30px">&lt;/li&gt;</p>
+                <p style="text-indent:10px">&lt;/ul&gt; &lt;!-- menu_content --&gt;</p>
+                </div>
+                </br>
+                <p>Здесь мы можем видеть, что при помощи HTML создаётся неупорядоченнный список с конструкцией &lt;ul&gt;  &lt;li&gt; &lt;/ul&gt;, при 
+              	этом список получается вложенным в друг друга. Ссылки заменены знаком # для простоты и наглядности. Подписываем название наших 
+                кнопок ссылок и переходим к созданию CSS.</p></br>
+                
+                <div id="text_code">
+                <p>
+<p style="text-indent:10px">ul {
+<p style="text-indent:50px">	display:block;
+<p style="text-indent:50px">	margin:0px;
+<p style="text-indent:50px">	padding:0px;
+<p style="text-indent:50px">	list-style:none;
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul:after {
+<p style="text-indent:50px">	display:block;
+<p style="text-indent:50px">	content:'';
+<p style="text-indent:50px">	clear:both;
+<p style="text-indent:50px">	float:none;
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.menu_content li {
+<p style="text-indent:50px">	float:left;
+<p style="text-indent:50px">	position:relative;
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.menu_content li a {
+<p style="text-indent:50px">	display:block;
+<p style="text-indent:50px">	padding:10px;
+<p style="text-indent:50px">	color:#FFFFFF;
+<p style="text-indent:50px">	background-color:#FF0004;
+<p style="text-indent:50px">	text-decoration:none;
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.menu_content li a:hover {
+<p style="text-indent:50px">	background-color:#000000;
+<p style="text-indent:10px">}
+<p style="text-indent:10px">/*------------ меню в контенте. развертываемые -------------*/
+<p style="text-indent:10px">/**/</p>
+<p style="text-indent:10px">/*------------ стиль для выпадающей меню 1-----------*/
+<p style="text-indent:10px">ul.sub_menu_1 { /* задаёт общие параметры для блока низпадающего меню.*/
+<p style="text-indent:50px">	display:none;
+<p style="text-indent:50px">	position:absolute;
+<p style="text-indent:50px">	width:110px;				/* ширина блока ощая */
+<p style="text-indent:50px">	top:37px;					/* сдвиг сверху от блока */
+<p style="text-indent:50px">	left:0px;					/* сдвиг слева от блока */
+<p style="text-indent:50px">	background-color:#0AFF00; 	/* цвет залвки блока общий */
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.sub_menu_1 li {
+<p style="text-indent:50px">	display:block; /*делает меню скрытым до наведения миши*/
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.sub_menu_1 li a {
+<p style="text-indent:50px">	display:block;
+<p style="text-indent:50px">	padding:10px;
+<p style="text-indent:50px">	color:#FFFFFF; 				/* цвет текста*/
+<p style="text-indent:50px">	width:110px; 				/* ширина кнопки меню */
+<p style="text-indent:50px">	height:25px; 				/* высота кнопочки меню */
+<p style="text-indent:50px">	background-color:#FF0004; 	/* цвет фона кнопочки */
+<p style="text-indent:50px">	text-decoration:none; 		/* подчеркивание и прочая лабуда */
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.sub_menu_1 li a:hover {
+<p style="text-indent:50px">	text-decoration:none; 		/* подчеркивание текста при наведении мыши и прочая лабуда */
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.menu_content li:hover ul.sub_menu_1 {
+<p style="text-indent:50px">	display:block;
+<p style="text-indent:10px">}
+<p style="text-indent:10px">/**/</p>
+<p style="text-indent:10px">/*------------ стиль для выпадающей меню 2-----------*/
+<p style="text-indent:10px">ul.sub_menu_2 {
+<p style="text-indent:50px">	display:none;
+<p style="text-indent:50px">	position:absolute;
+<p style="text-indent:50px">	width:110px;				/* ширина блока ощая */
+<p style="text-indent:50px">	top:37px;					/* сдвиг сверху от блока */
+<p style="text-indent:50px">	left:0px;					/* сдвиг слева от блока */
+<p style="text-indent:50px">	background-color:#0AFF00; 	/* цвет заливки блока общий */
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.sub_menu_2 li {
+<p style="text-indent:50px">	display:block;
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.sub_menu_2 li a {
+<p style="text-indent:50px">	display:block;
+<p style="text-indent:50px">	padding:10px;
+<p style="text-indent:50px">	color:#FFFFFF; 				/* цвет текста*/
+<p style="text-indent:50px">	width:110px; 				/* ширина кнопки меню */
+<p style="text-indent:50px">	height:25px; 				/* высота кнопочки меню */
+<p style="text-indent:50px">	background-color:#FF0004; 	/* цвет фона кнопочки */
+<p style="text-indent:50px">	text-decoration:none; 		/* подчеркивание и прочая лабуда */
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.sub_menu_2 li a:hover {
+<p style="text-indent:50px">	text-decoration:none; 		/* подчеркивание текста при наведении мыши и прочая лабуда */
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.menu_content li:hover ul.sub_menu_2 {
+<p style="text-indent:50px">	display:block;
+<p style="text-indent:10px">}
+<p style="text-indent:10px">/**/</p>
+<p style="text-indent:10px">/*------------ стиль для выпадающей меню 3-----------*/
+<p style="text-indent:10px">ul.sub_menu_3 {
+<p style="text-indent:50px">	display:none;
+<p style="text-indent:50px">	position:absolute;
+<p style="text-indent:50px">	width:90px;					/* ширина блока ощая */
+<p style="text-indent:50px">	top:37px;					/* сдвиг сверху от блока */
+<p style="text-indent:50px">	left:0px;					/* сдвиг слева от блока */
+<p style="text-indent:50px">	background-color:#0AFF00; 	/* цвет залиаки блока общий */
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.sub_menu_3 li {
+<p style="text-indent:50px">	display:block;
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.sub_menu_3 li a {
+<p style="text-indent:50px">	display:block;
+<p style="text-indent:50px">	padding:10px;
+<p style="text-indent:50px">	color:#FFFFFF; 				/* цвет текста*/
+<p style="text-indent:50px">	width:90px; 				/* ширина кнопки меню */
+<p style="text-indent:50px">	height:25px; 				/* высота кнопочки меню */
+<p style="text-indent:50px">	background-color:#FF0004; 	/* цвет фона кнопочки */
+<p style="text-indent:50px">	text-decoration:none; 		/* подчеркивание и прочая лабуда */
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.sub_menu_3 li a:hover {
+<p style="text-indent:50px">	text-decoration:none; 		/* подчеркивание текста при наведении мыши и прочая лабуда */
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.menu_content li:hover ul.sub_menu_3 {
+<p style="text-indent:50px">	display:block;
+<p style="text-indent:10px">}
+<p style="text-indent:10px">/**/</p>
+<p style="text-indent:10px">/*------------ стиль для выпадающей меню 4-----------*/
+<p style="text-indent:10px">ul.sub_menu_4 {
+<p style="text-indent:50px">	display:none;
+<p style="text-indent:50px">	position:absolute;
+<p style="text-indent:50px">	width:150px;				/* ширина блока ощая */
+<p style="text-indent:50px">	top:37px;					/* сдвиг сверху от блока */
+<p style="text-indent:50px">	left:0px;					/* сдвиг слева от блока */
+<p style="text-indent:50px">	background-color:#FF0004; 	/* цвет залиаки блока общий */
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.sub_menu_4 li {
+<p style="text-indent:50px">	display:block;
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.sub_menu_4 li a {
+<p style="text-indent:50px">	display:block;
+<p style="text-indent:50px">	padding:10px;
+<p style="text-indent:50px">	color:#FFFFFF; 				/* цвет текста*/
+<p style="text-indent:50px">	width:150px; 				/* ширина кнопки меню */
+<p style="text-indent:50px">	height:25px; 				/* высота кнопочки меню */
+<p style="text-indent:50px">	background-color:#FF0004; 	/* цвет фона кнопочки */
+<p style="text-indent:50px">	text-decoration:none; 		/* подчеркивание и прочая лабуда */
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.sub_menu_4 li a:hover {
+<p style="text-indent:50px">	text-decoration:none; 		/* подчеркивание текста при наведении мыши и прочая лабуда */
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.menu_content li:hover ul.sub_menu_4 {
+<p style="text-indent:50px">	display:block;
+<p style="text-indent:10px">}
+<p style="text-indent:10px">/**/</p>
+<p style="text-indent:10px">/*------------ стиль для выпадающей меню 5-----------*/
+<p style="text-indent:10px">ul.sub_menu_5 {
+<p style="text-indent:50px">	display:none;
+<p style="text-indent:50px">	position:absolute;
+<p style="text-indent:50px">	width:200px;				/* ширина блока ощая */
+<p style="text-indent:50px">	top:37px;					/* сдвиг сверху от блока */
+<p style="text-indent:50px">	left:0px;					/* сдвиг слева от блока */
+<p style="text-indent:50px">	background-color:#FF0004; 	/* цвет залиаки блока общий */
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.sub_menu_5 li {
+<p style="text-indent:50px">	display:block;
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.sub_menu_5 li a {
+<p style="text-indent:50px">	display:block;
+<p style="text-indent:50px">	padding:10px;
+<p style="text-indent:50px">	color:#FFFFFF; 				/* цвет текста*/
+<p style="text-indent:50px">	width:200px; 				/* ширина кнопки меню */
+<p style="text-indent:50px">	height:25px; 				/* высота кнопочки меню */
+<p style="text-indent:50px">	background-color:#FF0004; 	/* цвет фона кнопочки */
+<p style="text-indent:50px">	text-decoration:none; 		/* подчеркивание и прочая лабуда */
+<p style="text-indent:10px">}
+<p style="text-indent:10px">ul.sub_menu_5 li a:hover {
+<p style="text-indent:50px">	text-decoration:none; 		/* подчеркивание текста при наведении мыши и прочая лабуда */
+<p style="text-indent:50px">}
+<p style="text-indent:10px">ul.menu_content li:hover ul.sub_menu_5 {
+<p style="text-indent:50px">	display:block;
+<p style="text-indent:10px">}
+				</p>
+                </div> <!-- text_code -->
+                </br>
+                <p>Обратим внимание на структуру таблицы стилей, чтобы понимать что тут к чему. Условно всю таблицу можно разбить на несколько 
+                блоков. Блок menu_content - это стиль основной линии меню; блок sub_menu_ - это стили выпадающего меню, при этом для каждого меню 
+                создан свой набор стилей, т.к. они отличаются  друг от друга (желаемый цвет, ширина колонки и кнопок). Если пункты подменю одинаковы 
+                по количеству символов, то можно упростить себе задачу, настроив лишь один набор стилей и применив их ко всем подменю одновременно. 
+                Но такое бывает редко, зачастую необходима настройка для каждого. Итак, приступим:</p></br>
+             
+    	</div> <!-- text_content -->
+    </div><!-- countent -->
+    	
+    
+    <div id="futer">
+    </div><!-- futer -->
+    
+</div><!-- wrap -->
+
+
+</body>
+</html>
